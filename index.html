@@ -58,7 +58,7 @@ nav{
 }
 .hero-left{
   padding:80px 60px;border-right:3px solid var(--black);
-  display:flex;flex-direction:column;justify-content:space-between;
+  display:flex;flex-direction:column;justify-content:center;gap:0;
 }
 .hero-eyebrow{
   font-family:'IBM Plex Mono',monospace;font-size:.72rem;
@@ -81,8 +81,8 @@ h1.hero-name{
   margin-top:40px;
   display:inline-flex;
   flex-direction:row;
-  align-items:stretch;
-  border:3px solid var(--black);
+  align-items:center;
+  gap:12px;
   width:fit-content;
 }
 
@@ -92,12 +92,12 @@ h1.hero-name{
   background:var(--black);color:var(--white);
   font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.08em;
   text-decoration:none;
-  border:none;
-  border-right:3px solid var(--black);
-  transition:background .15s,color .15s;
+  border:2px solid var(--black);
+  border-radius:100px;
+  transition:background .15s,color .15s,border-color .15s;
   white-space:nowrap;
 }
-.btn-solid:hover{background:var(--orange);color:var(--black);}
+.btn-solid:hover{background:var(--orange);border-color:var(--orange);color:var(--white);}
 
 .btn-ghost {
   display:inline-flex;align-items:center;justify-content:center;
@@ -105,24 +105,25 @@ h1.hero-name{
   background:transparent;color:var(--black);
   font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.08em;
   text-decoration:none;
-  border:none;
-  border-right:3px solid var(--black);
-  transition:background .15s,color .15s;
+  border:2px solid rgba(0,0,0,.25);
+  border-radius:100px;
+  transition:background .15s,color .15s,border-color .15s;
   white-space:nowrap;
 }
-.btn-ghost:hover{background:var(--black);color:var(--white);}
+.btn-ghost:hover{background:var(--black);color:var(--white);border-color:var(--black);}
 
 .btn-cv {
   display:inline-flex;align-items:center;justify-content:center;gap:6px;
-  padding:13px 20px;
+  padding:13px 22px;
   background:transparent;color:var(--orange);
   font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.08em;
   text-decoration:none;
-  border:none;
+  border:2px solid var(--orange);
+  border-radius:100px;
   transition:background .15s,color .15s;
   white-space:nowrap;
 }
-.btn-cv:hover{background:var(--orange);color:var(--black);}
+.btn-cv:hover{background:var(--orange);color:var(--white);}
 .btn-cv i{font-size:.9rem;}
 
 /* HERO STATS */
@@ -510,7 +511,7 @@ footer span{color:var(--orange);}
     <li><a href="#experience">Pengalaman</a></li>
     <li><a href="#projects">Proyek</a></li>
     <li><a href="#contact">Kontak</a></li>
-    <li><a href="https://drive.google.com/drive/folders/1k68ysJOvPqi162Y_y-Fti2541GhjDFLZ?usp=sharing" target="_blank" style="color:var(--orange);"><i class="bi bi-file-earmark-arrow-down"></i> CV</a></li>
+    <li><a href="https://drive.google.com/file/d/11Ij32SfMjMR2W07JXbGc_qcExd1z2dMX/preview" target="_blank" style="color:var(--orange);"><i class="bi bi-file-earmark-arrow-down"></i> CV</a></li>
   </ul>
 </nav>
 
@@ -528,7 +529,7 @@ footer span{color:var(--orange);}
       <div class="hero-btns">
         <a href="#projects" class="btn-solid">Lihat Proyek</a>
         <a href="#contact" class="btn-ghost">Hubungi →</a>
-        <a href="https://drive.google.com/drive/folders/1k68ysJOvPqi162Y_y-Fti2541GhjDFLZ?usp=sharing" target="_blank" class="btn-cv"><i class="bi bi-file-earmark-arrow-down"></i> CV</a>
+        <a href="https://drive.google.com/file/d/11Ij32SfMjMR2W07JXbGc_qcExd1z2dMX/preview" target="_blank" class="btn-cv"><i class="bi bi-file-earmark-arrow-down"></i> CV</a>
       </div>
     </div>
 
@@ -800,7 +801,7 @@ footer span{color:var(--orange);}
         <p>Terbuka untuk posisi full-time, magang, atau proyek freelance. Mari diskusikan bagaimana saya bisa berkontribusi untuk tim Anda.</p>
         <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;">
           <a href="mailto:nikodwinovan@gmail.com" class="cta-big">Kirim Pesan →</a>
-          <a href="https://drive.google.com/drive/folders/1k68ysJOvPqi162Y_y-Fti2541GhjDFLZ?usp=sharing" target="_blank" style="
+          <a href="https://drive.google.com/file/d/11Ij32SfMjMR2W07JXbGc_qcExd1z2dMX/preview" target="_blank" style="
             display:inline-flex;align-items:center;gap:8px;
             background:transparent;color:var(--orange);
             font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.1em;
